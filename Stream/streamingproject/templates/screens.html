@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+<head>
+    <title>Результаты</title>
+    {% block head %}
+
+    {% endblock %}
+</head>
+
+{% block content %}
+{% if stream_path == 0 %}
+    <body>
+        <div class="container ">
+            <div class="text-center">
+                <h3 class="text-center text-warning" style="color: rgb(0, 38, 255)">Видео с камеры</h3>
+                <img class="img img-thumbnail rouded" src="{% url 'dynamic_stream' num=1 stream_path=0 %}"/>
+            </div>
+        </div>
+    </body>
+
+{% elif stream_path == 1%}
+     <body>
+        <div class="container ">
+            <div class="text-center">
+                <h3 class="text-center text-warning" style="color: rgb(0, 38, 255)">Видео с камеры</h3>
+                <img class="img img-thumbnail rouded" src="{% url 'dynamic_stream' num=2 stream_path='1.mp4' %}"/>
+            </div>
+        </div>
+    </body>
+{% elif stream_path == 2%}
+    <body>
+        <div class="container ">
+            <div class="text-center">
+                <h3 class="text-center text-warning" style="color: rgb(0, 38, 255)">Видео с камеры</h3>
+                <img class="img img-thumbnail rouded" src="{% url 'dynamic_stream' num=3 stream_path='2.mp4' %}"/>
+            </div>
+        </div>
+    </body>
+{% endif %}
+
+        <br>
+        <hr>
+        <div class="btn btn-group">
+            <a href="/index/">
+                <div class="btn btn-link btn-sm">Домашняя страница</div>
+            </a>
+            <a href="/logout/">
+                <div class="btn btn-link btn-sm">Выйти</div>
+            </a>
+        </div>
+
+{% endblock %}
+
+</html>
