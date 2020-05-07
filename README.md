@@ -17,5 +17,10 @@
 * pass 1  
 ##### 4)DONE!  
 # Final mask Weights https://yadi.sk/d/2iQBHefJ4rm_BA  
-![Alt text](https://github.com/kremlev404/MaskDetectionHackathon/blob/kremlev/1.gif "Result")
+# Mask detection result
+![Alt text](https://github.com/kremlev404/Medical-Mask-Detection-CV/blob/master/mask.jpg "Result")
+
+# Final program review
+![Alt text](https://github.com/kremlev404/Medical-Mask-Detection-CV/blob/master/1.gif "Result")
+
 
